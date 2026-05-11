@@ -580,7 +580,7 @@ function renderStatus() {
 
   const isComputerTurn = state.mode === 'vs-computer' && state.currentSide !== state.playerColor;
   if (isAnimating || isComputerTurn) {
-    el.textContent = 'Computer thinking...';
+    el.textContent = 'Thinking...';
     el.className = 'top-bar-center status-text muted';
     return;
   }
